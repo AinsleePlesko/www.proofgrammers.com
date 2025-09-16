@@ -59,7 +59,8 @@ def DefinedOnString(program_code : str, inString : str) -> bool:
     return True # Assume it halts for demonstration
 
 def Paradox():
-    """A paradoxical function that uses DefinedOnString to create a contradiction."""
+    """A paradoxical function that uses DefinedOnString to create a contradiction.
+    """
     my_source = rf("definedOnString.py") # read this file as a string
     if DefinedOnString(my_source, my_source):
         print("Checker says: halts → looping forever...")
